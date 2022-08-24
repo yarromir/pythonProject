@@ -5,11 +5,11 @@ import numpy as np
 
 a = [2, 4]
 b = [3, 7]
-s = 0
 
 
 def scalar_multiplication(a, b):
     s = np.dot(a, b)
+    return s
 
 
 print(scalar_multiplication(a, b))
