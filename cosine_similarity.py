@@ -7,4 +7,4 @@ A = np.array([192, 168])
 B = np.array([0, 1])
 
 cosine = np.dot(A, B)/(norm(A) * norm(B))
-print("Cosine Similarity:", cosine)
+print(cosine)
