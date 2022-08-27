@@ -3,13 +3,15 @@
 
 import random
 
-int_list = list(range(49))
-unique_values = []
+a = list(range(49))
+for i in a:
+    a[i] = random.randint(-100, 100)
 
-for i in int_list:
-    int_list[i] = random.randint(-100, 100)
 
-unique_values = set(int_list)
+def unique_values(a):
+    a = set(a)
+    return a
 
-print(unique_values)
-print(len(unique_values))
+
+print(unique_values(a))
+print("Number of unique values: " + str(len(unique_values(a))))
